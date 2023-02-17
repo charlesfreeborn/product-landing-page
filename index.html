@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="/assets/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e29ef6598f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="header">
       <!-- use a logo for the iamge. can generate one from an online tool like favicon tool -->
       <!-- src should start with http -->
+
       <img id="header-img" src="" />
       <nav id="nav-bar">
+        <a href="">Brand Name</a>
         <ul>
           <li>
             <a href="#about" class="nav-link">About</a>
           </li>
           <li>
-            <a href="#product" class="nav-link">Products</a>
+            <a href="#products" class="nav-link">Products</a>
           </li>
           <li>
             <a href="#contact" class="nav-link">Contact</a>
@@ -32,13 +38,78 @@
         action="https://www.freecodecamp.com/email-submit"
         method="post"
       >
-        <label for="email"> Enter your email: </label>
+        <label for="email">
+          Enter your email to subscribe to our news letter:
+        </label>
         <input type="email" id="email" placeholder="your email" name="" email />
-        <input type="submit" value="Get Started" id="submit" />
+        <input type="submit" value="GET STARTED" id="submit" />
       </form>
+      <i class="fa-brands fa-leanpub"></i>
+      <h2 id="about">About Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vero
+        nostrum soluta ut sint voluptate quos amet. Fugiat praesentium possimus
+        labore voluptate pariatur amet, distinctio reiciendis quo eligendi est
+        ipsam!
+      </p>
+
+      <i class="fa-solid fa-display"></i>
+      <h2 id="products">Products</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
+        doloremque pariatur id, vitae laboriosam consequuntur, iste dolore qui
+        nisi aspernatur at deserunt. Nam atque ut totam consequatur soluta.
+        Expedita, modi?
+      </p>
+
+      <i class="fa-regular fa-address-book"></i>
+      <h2>Contact</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad alias
+        distinctio autem, sapiente dolorem iste omnis quos ab totam vero
+        perspiciatis nam doloremque, illum nulla eius quas, sit sequi nisi?
+      </p>
       <video id="video" controls width="250">
         <source src="" />
       </video>
+      <div class="wrapper">
+        <div>
+          <h3>Free plan</h3>
+          <ul>
+            <li>Lorem, ipsum</li>
+            <li>dolor sit</li>
+            <li>amet consectetur</li>
+          </ul>
+          <button>Select</button>
+        </div>
+        <div>
+          <h3>Monthly plan</h3>
+          <h4>$14.99</h4>
+          <ul>
+            <li>adipisicing elit</li>
+            <li>Excepturi ipsum</li>
+            <li>dolorum quibusdam</li>
+          </ul>
+          <button>Select</button>
+        </div>
+        <div>
+          <h3>Yearly Plan</h3>
+          <h4>$100.99</h4>
+          <ul>
+            <li>laboriosam cupiditate</li>
+            <li>quae tenetur</li>
+            <li>eligendi ea quam</li>
+            <button>Select</button>
+          </ul>
+        </div>
+      </div>
     </main>
+    <footer>
+      <p>
+        Designed with <code><3</code> by
+        <a href="https://twitter.com/charliecodes">Charles Freeborn</a> &copy;
+        2023
+      </p>
+    </footer>
   </body>
 </html>
