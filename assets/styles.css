@@ -18,22 +18,27 @@ html {
 body {
   background-color: var(--main-body-color);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
 }
 
 #nav-bar {
-  border-bottom: 1px solid black;
-  font-size: 1.5rem;
+  border-bottom: 2px solid black;
+  font-size: 1.7rem;
   font-weight: bolder;
-  padding-right: 30px;
   background-color: var(--nav-footer-color);
+  position: fixed;
+  width: 100%;
+  padding: 20px 40px 20px 40px;
+  top: 0;
 }
 
 .main-nav {
   display: flex;
   gap: 3%;
-  margin: 10px;
+  /* margin: 10px; */
   position: relative;
-  padding: 20px;
+  /* padding: 20px; */
   top: 0;
 }
 
@@ -45,8 +50,6 @@ body {
   text-decoration: none;
   color: var(--hover-color);
   text-align: center;
-  margin: 10px;
-  padding: 10px;
 }
 
 #nav-bar .main-nav .nav-link {
@@ -63,13 +66,46 @@ a:hover,
 }
 
 main {
-  width: 80%;
-  /* height: 70%; */
+  width: 70%;
+  margin: 60px auto 60px auto;
+}
+
+#form {
+  margin: 40px;
+  display: grid;
+}
+
+#form .sign-up {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+#form #email {
+  text-align: center;
+}
+
+#form #submit {
   margin: 0 auto;
-  /* background-color: blue; */
-  margin-top: 20px;
+  background-color: var(--hover-color);
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+#form #submit:hover {
+  cursor: pointer;
+}
+
+#email,
+#submit {
+  margin: 0 auto 5px;
+  /* margin-top: 10px; */
+  height: 30px;
+  width: 30%;
 }
 
 footer {
   /* background-color: var(--nav-footer-color); */
+  /* height: 100%; */
 }
