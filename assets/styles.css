@@ -52,7 +52,8 @@ body {
   text-align: center;
 }
 
-#nav-bar .main-nav .nav-link {
+#nav-bar .main-nav .nav-link,
+.wrapper div ul li {
   list-style: none;
 }
 
@@ -105,7 +106,57 @@ main {
   width: 30%;
 }
 
+.container {
+  margin-bottom: 30px;
+  /* width: 80%; */
+  /* background-color: azure; */
+}
+
+.fa-leanpub,
+.fa-display,
+.fa-address-book {
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  /* padding-bottom: 20px; */
+  /* height: 10%; */
+  /* background-color: aqua; */
+}
+
+.about-section,
+.product-section,
+.contact-section {
+  margin-bottom: 40px;
+}
+
+#video {
+  margin: 20px;
+  /* width: 500px; */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* background-color: #85586f; */
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.wrapper div {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border: 1px solid #000000;
+  text-align: center;
+}
 footer {
-  /* background-color: var(--nav-footer-color); */
-  /* height: 100%; */
+  background-color: var(--nav-footer-color);
+  height: 50px;
+  text-align: center;
+  padding: 10px;
 }
