@@ -36,9 +36,7 @@ body {
 .main-nav {
   display: flex;
   gap: 3%;
-  /* margin: 10px; */
   position: relative;
-  /* padding: 20px; */
   top: 0;
 }
 
@@ -82,10 +80,6 @@ main {
   margin-bottom: 5px;
 }
 
-#form #email {
-  text-align: center;
-}
-
 #form #submit {
   margin: 0 auto;
   background-color: var(--hover-color);
@@ -94,22 +88,21 @@ main {
   letter-spacing: 4px;
 }
 
-#form #submit:hover {
+#form #submit:hover,
+button:hover {
   cursor: pointer;
 }
 
 #email,
 #submit {
   margin: 0 auto 5px;
-  /* margin-top: 10px; */
   height: 30px;
   width: 30%;
+  text-align: center;
 }
 
 .container {
   margin-bottom: 30px;
-  /* width: 80%; */
-  /* background-color: azure; */
 }
 
 .fa-leanpub,
@@ -118,9 +111,6 @@ main {
   float: left;
   margin-right: 40px;
   margin-bottom: 30px;
-  /* padding-bottom: 20px; */
-  /* height: 10%; */
-  /* background-color: aqua; */
 }
 
 .about-section,
@@ -129,9 +119,15 @@ main {
   margin-bottom: 40px;
 }
 
+/* come back to style the video */
+iframe {
+  display: block;
+}
+
 #video {
-  margin: 20px;
-  /* width: 500px; */
+  max-width: 100%;
+  /* height: auto; */
+  margin: 20px auto;
 }
 
 .wrapper {
@@ -141,7 +137,6 @@ main {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  /* background-color: #85586f; */
   margin: 0 auto;
   padding: 20px 10px;
 }
@@ -154,9 +149,68 @@ main {
   border: 1px solid #000000;
   text-align: center;
 }
+
+.wrapper div h3 {
+  background-color: var(--hover-color);
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  line-height: 2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.wrapper button {
+  background-color: aqua;
+  height: 30px;
+  width: 50%;
+  margin: 40px;
+  text-transform: uppercase;
+  background-color: var(--hover-color);
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
 footer {
   background-color: var(--nav-footer-color);
   height: 50px;
   text-align: center;
   padding: 10px;
+  border-top: 2px solid black;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--main-body-color);
+}
+
+@media (max-width: 906px) {
+  #header {
+    height: 100px;
+  }
+  #nav-bar {
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+  }
+
+  .main-nav {
+    display: grid;
+    text-align: center;
+  }
+
+  #brand-name {
+    visibility: hidden;
+  }
+
+  #email,
+  #submit {
+    height: 30px;
+    width: 70%;
+  }
 }
